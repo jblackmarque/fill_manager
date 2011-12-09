@@ -16,7 +16,7 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
-gem 'jquery-rails'
+# gem 'jquery-rails'
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -30,7 +30,13 @@ gem 'jquery-rails'
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
 
+group :development do
+  gem 'rspec-rails', '~> 2.6.1'
+end
+
 group :test do
+  gem 'rspec-rails', '~> 2.6.1'
+  gem 'webrat', '~> 0.7.1'
   # Pretty printed test output
   gem 'turn', '0.8.2', :require => false
 end
